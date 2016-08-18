@@ -5,7 +5,7 @@ INTRODUCTION                                    *safe-paste*
 This plugin protects against certain attempts at "clipboard hijacking" in the
 terminal by never interpreting special terminal escapes. Clipboard hijacking
 is an attack where a webpage fools the user into copying something they didn't
-intend to copy. In the terminal, this can be especially dangerout since
+intend to copy. In the terminal, this can be especially dangerous since
 pasting can result in arbitrary commands being run.
 
 A demo of terminal clipboard hijacking can be found here:

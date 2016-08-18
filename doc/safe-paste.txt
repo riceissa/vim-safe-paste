@@ -1,0 +1,37 @@
+*safe-paste.txt*  Safely paste from the system clipboard
+
+INTRODUCTION                                    *safe-paste*
+
+This plugin protects against certain attempts at "clipboard hijacking" in the
+terminal by never interpreting special terminal escapes. Clipboard hijacking
+is an attack where a webpage fools the user into copying something they didn't
+intend to copy. In the terminal, this can be especially dangerout since
+pasting can result in arbitrary commands being run.
+
+A demo of terminal clipboard hijacking can be found here:
+https://thejh.net/misc/website-terminal-copy-paste
+
+See also: http://vim.wikia.com/wiki/Pasting_registers?useskin=monobook
+
+In addition, this plugin always uses characterwise paste when pasting from the
+system clipboard. This is to avoid accidentally misplacing the pasted text.
+For instance, consider the following: >
+
+    "^"
+
+where ^ indicates the cursor position. Suppose the user is in insert mode, and
+the intent is to paste the text between the quotes. If the text was pasted
+using linewise paste, one would obtain >
+
+    pasted test^
+    ""
+
+instead of the intended >
+
+    "pasted text^"
+
+LICENSE                                         *safe-paste-license*
+
+Same terms as Vim itself (see |license|).
+
+ vim:tw=78:et:ft=help:norl:

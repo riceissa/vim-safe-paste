@@ -34,4 +34,4 @@ LICENSE                                         *safe-paste-license*
 
 Same terms as Vim itself (see |license|).
 
- vim:tw=78:et:ft=help:norl:
+ vim:tw=78:et:ts=8:ft=help:norl:

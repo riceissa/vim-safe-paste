@@ -1,5 +1,8 @@
 # safe-paste.vim
 
+**NOTE: This plugin has been superseded by [vim-pasteurize](https://github.com/riceissa/vim-pasteurize).
+It is no longer maintained.**
+
 Safely paste from the system clipboard.
 
 See also
